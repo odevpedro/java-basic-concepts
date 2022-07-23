@@ -6,7 +6,6 @@ public class Conta {
 
 
     //métodos
-
     public void deposita(double valor){
         this.saldo += valor;
     }
@@ -19,5 +18,15 @@ public class Conta {
         } else {
             return false;
         }
+    }
+
+    public boolean transfere(Conta destino, double valor){
+        if (this.saldo >= valor){
+            saldo -= valor;
+            destino.deposita(valor);
+            return true;
+        }
+        return false;
+
     }
 }
