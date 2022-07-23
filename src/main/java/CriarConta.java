@@ -20,5 +20,10 @@ public class CriarConta {
         System.out.println("saldo da primeira conta" + primeiraConta.saldo);
         System.out.println("saldo da segunda conta" + segundaConta.saldo);
 
+        //Acessando atributos zerados
+        System.out.println(primeiraConta.agencia);
+        System.out.println(primeiraConta.numero);
+        System.out.println(primeiraConta.titular);
+
     }
 }
