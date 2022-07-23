@@ -8,7 +8,16 @@ public class Conta {
     //métodos
 
     public void deposita(double valor){
-        this.saldo = saldo + valor;
+        this.saldo += valor;
     }
 
+
+    public boolean saca(double valor) {
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
