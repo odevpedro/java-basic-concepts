@@ -25,5 +25,17 @@ public class CriarConta {
         System.out.println(primeiraConta.numero);
         System.out.println(primeiraConta.titular);
 
+        //verificando se a primeira conta é a mesma que a segunda
+        if (primeiraConta == segundaConta){
+            System.out.println("são a mesma conta");
+        } else {
+            System.out.println("Contas diferentes");
+        }
+
+        //referencias diferentes para endereços diferentes
+        System.out.println(primeiraConta);
+        System.out.println(segundaConta);
+
+
     }
 }
