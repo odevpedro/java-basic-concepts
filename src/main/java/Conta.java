@@ -1,7 +1,7 @@
 
 
 public class Conta {
-    double saldo;
+   private double saldo; //declaramos um atributo como privado, para encapsular
     int agencia;
     int numero;
     public Cliente titular;
@@ -29,6 +29,9 @@ public class Conta {
             return true;
         }
         return false;
-
     }
+
+    public double pegaSaldo(){
+        return saldo;
+    };
 }

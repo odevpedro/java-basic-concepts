@@ -12,7 +12,7 @@ public class TestaBanco{
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.deposita(100);
 
-        //Acessando o atributo proffisão através do titular que compõe a conta
+        //Acessando o atributo profisão através do titular que compõe a conta
         contaDoPaulo.titular = paulo;
         System.out.println(contaDoPaulo.titular.proffisao);
         System.out.println(contaDoPaulo.titular.nome);
