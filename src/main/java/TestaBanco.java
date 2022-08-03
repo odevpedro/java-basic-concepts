@@ -6,6 +6,8 @@ public class TestaBanco{
         paulo.cpf = "10319428100";
         paulo.proffisao = "Programador";
 
+        Cliente paula = new Cliente();
+
         //Criando a Conta
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.deposita(100);
@@ -15,6 +17,8 @@ public class TestaBanco{
         System.out.println(contaDoPaulo.titular.proffisao);
         System.out.println(contaDoPaulo.titular.nome);
         System.out.println(contaDoPaulo.titular.cpf);
+
+
 
 
 
