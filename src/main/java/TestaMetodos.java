@@ -1,15 +1,15 @@
 public class TestaMetodos {
     public static void main(String[] args) {
         Conta conta = new Conta();
-        conta.saldo = 100;
-        System.out.println(conta.saldo);
+        conta.deposita(100);
+        System.out.println(conta.getSaldo());
 
         conta.deposita(15);
-        System.out.println(conta.saldo);
+        System.out.println(conta.getSaldo());
 
 
         conta.saca(15);
-        System.out.println(conta.saldo);
+        System.out.println(conta.getSaldo());
 
 
         boolean conseguiuRetirar = conta.saca(20);
@@ -18,13 +18,13 @@ public class TestaMetodos {
 
         //instanciando conta para fazer a transferencia
         Conta contaDaMarcela = new Conta();
-        contaDaMarcela.saldo = 3000;
+        contaDaMarcela.deposita(3000);
 
         contaDaMarcela.transfere(conta, 1000);
-        System.out.println(contaDaMarcela.saldo);
+        System.out.println(contaDaMarcela.getSaldo());
 
         //consultando a conta na qual o dinheiro foi depositado
-        System.out.println(conta.saldo);
+        System.out.println(conta.getSaldo());
 
 
         //também seria possivel passar  meu método como boolean
@@ -46,7 +46,7 @@ public class TestaMetodos {
 
 
 
-        System.out.println(contaDaMarcela.titular);
+        System.out.println(contaDaMarcela.getTitular());
 
 
 

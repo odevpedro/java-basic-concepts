@@ -15,9 +15,9 @@ public class ReferenciasVsObjetos {
         System.out.println("valor do saldo da segunda conta: " + segundaConta.getSaldo());
 
         //adicionando 100 no saldo da segunda conta faz com que os mesmos 100 sejam adicionados na primeira conta
-        segundaConta.saldo += 100;
-        System.out.println(segundaConta.saldo);
-        System.out.println(primeiraConta.saldo);
+        segundaConta.deposita(100);
+        System.out.println(segundaConta.getSaldo());
+        System.out.println(primeiraConta.getSaldo());
 
         //verificando se a primeira conta é a mesma que a segunda
         if (primeiraConta == segundaConta){
