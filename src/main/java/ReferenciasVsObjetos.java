@@ -1,7 +1,7 @@
 public class ReferenciasVsObjetos {
     public static void main(String[] args){
         Conta primeiraConta = new Conta();
-        primeiraConta.saldo = 300;
+        primeiraConta.setNumero(100);
 
 
 
@@ -11,8 +11,8 @@ public class ReferenciasVsObjetos {
 
 
         // a variavel conta não presenta um objeto conta e sim aponta para uma conta
-        System.out.println("Valor do saldo da primeira conta:" + primeiraConta.saldo);
-        System.out.println("valor do saldo da segunda conta: " + segundaConta.saldo);
+        System.out.println("Valor do saldo da primeira conta:" + primeiraConta.getSaldo());
+        System.out.println("valor do saldo da segunda conta: " + segundaConta.getSaldo());
 
         //adicionando 100 no saldo da segunda conta faz com que os mesmos 100 sejam adicionados na primeira conta
         segundaConta.saldo += 100;

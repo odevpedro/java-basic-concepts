@@ -2,9 +2,9 @@
 
 public class Conta {
    private double saldo; //declaramos um atributo como privado, para encapsular
-    int agencia;
-    int numero;
-    public Cliente titular;
+    private int agencia;
+    private int numero;
+     public Cliente titular;
 
 
     //métodos
@@ -31,7 +31,17 @@ public class Conta {
         return false;
     }
 
-    public double pegaSaldo(){
+    public double getSaldo(){
         return saldo;
-    };
+    }
+
+public int getNumero(){
+        return this.numero = numero;
+    }
+
+    public int setNumero(int numero){
+        return this.numero = numero;
+    }
+
+
 }
