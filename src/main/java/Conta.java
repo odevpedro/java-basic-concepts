@@ -4,7 +4,7 @@ public class Conta {
    private double saldo; //declaramos um atributo como privado, para encapsular
     private int agencia;
     private int numero;
-     public Cliente titular;
+     private Cliente titular;
 
 
     //métodos
@@ -44,4 +44,10 @@ public int getNumero(){
     }
 
 
+    public void setTitular(Cliente conta) {
+    }
+
+    public Cliente getTitular() {
+        return titular;
+    }
 }
