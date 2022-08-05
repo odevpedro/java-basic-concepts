@@ -4,11 +4,13 @@ public class Conta {
    private double saldo; //declaramos um atributo como privado, para encapsular
     private int agencia;
     private int numero;
-     private Cliente titular;
-
+    private Cliente titular;
+    private static int total;
 
      Conta(int numero, int agencia){
-          //O construtor restringe a criação de objetos exigindo determinados atributos
+         total++;
+         System.out.println("O total de contas é: " + total);
+         //O construtor restringe a criação de objetos exigindo determinados atributos
          this.agencia = agencia;
          this.numero = numero;
          System.out.println("Estou criando uma conta" + this.numero);
@@ -61,5 +63,9 @@ public int getNumero(){
 
     public Cliente getTitular() {
         return titular;
+    }
+
+    public static int getTotal() {
+        return total;
     }
 }
