@@ -1,6 +1,6 @@
 public class TestaGetESet {
     public static void main(String[] args) {
-        Conta conta = new Conta();
+        Conta conta = new Conta(478,49);
         //conta.numero = 10;
         conta.setNumero(1337);
 

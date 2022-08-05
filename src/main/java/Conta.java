@@ -7,6 +7,13 @@ public class Conta {
      private Cliente titular;
 
 
+     Conta(int numero, int agencia){
+          //O construtor restringe a criação de objetos exigindo determinados atributos
+         this.agencia = agencia;
+         this.numero = numero;
+         System.out.println("Estou criando uma conta" + this.numero);
+     }
+
     //métodos
     public void deposita(double valor){
         this.saldo += valor;
@@ -44,7 +51,12 @@ public int getNumero(){
     }
 
 
-    public void setTitular(Cliente conta) {
+    public void setTitular(Cliente titular) {
+        this.titular = titular;
+    }
+
+    public int getAgencia() {
+        return agencia;
     }
 
     public Cliente getTitular() {

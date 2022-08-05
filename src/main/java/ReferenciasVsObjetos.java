@@ -1,6 +1,6 @@
 public class ReferenciasVsObjetos {
     public static void main(String[] args){
-        Conta primeiraConta = new Conta();
+        Conta primeiraConta = new Conta(47,87);
         primeiraConta.setNumero(100);
 
 
