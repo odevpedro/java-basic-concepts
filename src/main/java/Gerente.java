@@ -1,7 +1,4 @@
 public class Gerente extends Funcionario { //Gerente herda o estado e o comportamento contido em Funcionário
-    private String nome;
-    private String cpf;
-    private double salario;
     private int senha;
 
 
@@ -17,7 +14,7 @@ public class Gerente extends Funcionario { //Gerente herda o estado e o comporta
         }
     }
 
-//    public double getBonificacao() {
-//        return this.salario = salario;
-//    }
+   public double getBonificacao() {
+       return super.salario;
+    }
 }

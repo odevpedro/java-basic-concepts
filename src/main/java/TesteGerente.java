@@ -13,5 +13,7 @@ public class TesteGerente {
         gerente.setSenha(123);
         boolean autenticou = gerente.autentica(123); //método vindo apenas do gerente
         System.out.println(autenticou);
+
+        System.out.println(gerente.getBonificacao()); //Temos uma bonificação especifica para cada Funcionario
     }
 }
