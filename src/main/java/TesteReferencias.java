@@ -8,7 +8,7 @@ public class TesteReferencias {
         //gerente.autentica(222);
 
 
-        Gerente g1 = new Gerente();
+        Funcionario g1 = new Gerente();
         g1.setNome("Paulo");
         System.out.println(g1.getNome());
         g1.setSalario(999999);
@@ -16,7 +16,7 @@ public class TesteReferencias {
         Funcionario f = new Funcionario();
         f.setSalario(2000.0);
 
-        EditorVideo ev = new EditorVideo();
+        Funcionario ev = new EditorVideo();
         ev.setSalario(2500.0);
 
 

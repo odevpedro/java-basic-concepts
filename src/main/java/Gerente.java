@@ -15,6 +15,7 @@ public class Gerente extends Funcionario { //Gerente herda o estado e o comporta
     }
 
    public double getBonificacao() {
+       System.out.println("Chamando o método bonificacao do GERENTE");
        return super.getBonificacao() + super.getSalario();
     }
 }
