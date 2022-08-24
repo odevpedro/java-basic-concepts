@@ -4,10 +4,9 @@ public abstract class Funcionario {
     private double salario;
 
 
-    public double getBonificacao() {
-        System.out.println("Chamando o método bonificacao do FUNCIONARIO");
-        return this.salario * 0.05;
-    }
+    //garantir que esse método existe para os filhos
+    //método sem implementação na superclass
+    public abstract double getBonificacao();
 
     public String getNome() {
         return nome;
