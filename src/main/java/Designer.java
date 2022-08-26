@@ -1,10 +1,9 @@
-public class Designer extends Funcionario{
+//Gerente eh um Funcionario, Gerente herda da class Funcionario
+public class Designer extends Funcionario {
+	
+	public double getBonificacao() {
+		System.out.println("Chamando o método de bonificacao do Designer");
+		return 200;
+	}	
 
-    @Override
-    public double getBonificacao() {
-        System.out.println("Chamando método de bonificação do usuário");
-        return 200;
-
-        //garatimos que o filho tenha implementação
-    }
 }

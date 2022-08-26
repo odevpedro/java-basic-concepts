@@ -1,19 +1,26 @@
+
 public class TesteGerente {
-    public static void main(String[] args) {
-        Gerente gerente = new Gerente();
 
-        //O meu objeto gerente tem todos os métodos definidos na classe mãe
-        gerente.setNome("Pedro");
-        System.out.println(gerente.getNome());
-        gerente.setCpf("823.103.194-29");
-        System.out.println(gerente.getCpf());
-        gerente.setSalario(10000);
-        System.out.println(gerente.getSalario());
+	public static void main(String[] args) {
+		
+		Autenticavel referencia = new Cliente();
+		
+		Gerente g1 = new Gerente();
+		g1.setNome("Marco");
+		g1.setCpf("235568413");
+		g1.setSalario(5000.0);
+		
+		System.out.println(g1.getNome());
+		System.out.println(g1.getCpf());
+		System.out.println(g1.getSalario());
+		
+		g1.setSenha(2222);
+		boolean autenticou = g1.autentica(2222);
+		
+		System.out.println(autenticou);
+		
+		System.out.println(g1.getBonificacao());
 
-        gerente.setSenha(123);
-        boolean autenticou = gerente.autentica(123); //método vindo apenas do gerente
-        System.out.println(autenticou);
+	}
 
-        System.out.println(gerente.getBonificacao()); //Temos uma bonificação especifica para cada Funcionario
-    }
 }

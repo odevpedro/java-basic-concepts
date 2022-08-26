@@ -1,26 +1,25 @@
+
 public class TesteReferencias {
-    public static void main(String[] args) {
-        //Já que o gerente é um funcionario podemos
-        Funcionario gerente = new Gerente();
-        gerente.setNome("Pedro");
-        System.out.println(gerente.getNome());
 
-        //gerente.autentica(222);
+	public static void main(String[] args) {
+		
+		Gerente g1 = new Gerente();
+		g1.setNome("Marcos");
+		g1.setSalario(5000.0);
+	
+		EditorVideo ev = new EditorVideo();
+		ev.setSalario(2500.0);
+		
+		Designer d = new Designer();
+		d.setSalario(2000.0);
+		
+		ControleBonificacao controle = new ControleBonificacao();
+		controle.registra(g1);
+		controle.registra(ev);
+		controle.registra(d);
+		
+		System.out.println(controle.getSoma());
+		
+	}
 
-
-        Funcionario g1 = new Gerente();
-        g1.setNome("Paulo");
-        System.out.println(g1.getNome());
-        g1.setSalario(999999);
-
-        Funcionario ev = new EditorVideo();
-        ev.setSalario(2500.0);
-
-
-        ControleBonificacao controle = new ControleBonificacao();
-        controle.registra(g1);
-        controle.registra(ev);
-
-        System.out.println(controle.getSoma());
-    }
 }
