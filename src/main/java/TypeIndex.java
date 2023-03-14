@@ -1,6 +1,4 @@
-import java.util.Locale;
-
-public class Primitives {
+public class TypeIndex {
     /*In Java, you should use primitives for basic data types such as integers or booleans, and reference types for complex data structures like objects.*/
     public static void main(String[] args) {
         byte a = 127; // byte data type
@@ -29,8 +27,8 @@ public class Primitives {
         System.out.println(message.indexOf("h")); //I ask the position of the indicated letter
         System.out.println(message.replace( "l","h")); //replace one letter with another
         System.out.println(message); //Print the original result, because String in java are imutable
-        System.out.println(message.toLowerCase());
-        System.out.println(message.toUpperCase());
+        System.out.println(message.toLowerCase()); //...
+        System.out.println(message.toUpperCase()); //...
         System.out.println(message.trim()); //  remove leading and trailing whitespace from a String
         System.out.println(message);
 
@@ -39,6 +37,26 @@ public class Primitives {
         String myString1 = "Hello, world!";
         String myString2 = "Hello, world!";
         boolean isEqual = myString1.equals(myString2);
+
+
+        //Scape Sequence
+
+
+        String myString = "Hello\nWorld";
+        System.out.println(myString); //to "break" the output lines
+
+        String string = "Name:\tJohn"; //tab character
+        System.out.println(myString);
+
+        String quote = "She said, \"Hello!\"";
+        System.out.println(quote); // represents a double quote character
+
+        String backslash = "C:\\Program Files\\Java"; //represents a backslash character
+        System.out.println(backslash);
+
+
+
+
 
     }
 
