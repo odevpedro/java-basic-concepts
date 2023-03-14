@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Primitives {
     /*In Java, you should use primitives for basic data types such as integers or booleans, and reference types for complex data structures like objects.*/
     public static void main(String[] args) {
@@ -18,5 +20,27 @@ public class Primitives {
         System.out.println("double: " + f);
         System.out.println("boolean: " + g);
         System.out.println("char: " + h);
+
+
+        String message = " Hell o";
+        System.out.println(message.endsWith("!!"));//I ask if my message ends with the indicated string
+
+        System.out.println(message.startsWith("!!"));//I ask if my message ends with the indicated string
+        System.out.println(message.indexOf("h")); //I ask the position of the indicated letter
+        System.out.println(message.replace( "l","h")); //replace one letter with another
+        System.out.println(message); //Print the original result, because String in java are imutable
+        System.out.println(message.toLowerCase());
+        System.out.println(message.toUpperCase());
+        System.out.println(message.trim()); //  remove leading and trailing whitespace from a String
+        System.out.println(message);
+
+
+        //Comparing two Strings
+        String myString1 = "Hello, world!";
+        String myString2 = "Hello, world!";
+        boolean isEqual = myString1.equals(myString2);
+
     }
+
+
 }
