@@ -13,6 +13,14 @@ public class Arrays {
 
         System.out.println(myList[0]);
 
+
+        int[] numbers = {1,2,3,4,5,6};//another way to use array
+        System.out.println(numbers.length);
+
+
+        
+        //In java arrays have limited sizes, once created we cannot change this size
+
     }
 
 
